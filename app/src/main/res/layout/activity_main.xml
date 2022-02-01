@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF018786"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/logoText"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/yourCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="60sp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:hint="Введите город"
+        android:inputType="textPersonName"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor" />
+
+    <Button
+        android:id="@+id/getWeather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yourCity"
+        android:layout_marginHorizontal="140dp"
+        android:layout_marginTop="15sp"
+        android:text="Посмотреть погоду"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/wind_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temprature_city"
+        android:layout_marginTop="0sp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/temprature_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getWeather"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/humidity_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wind_city"
+        android:layout_marginTop="0sp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>
